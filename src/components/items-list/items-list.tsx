@@ -1,24 +1,15 @@
 import { useAppContext } from "../../contex/AppContext";
+import { Item } from "../item/item";
 
 export const ItemList = () => {
 
     const {
         stringList,
-        stringsSelected,
-        handleClickItem,
-        handleDeleteStringDoubleClick
     } = useAppContext()
 
     return <ul className='string-list__content'>
         {stringList.map((string) => {
-            return <li
-                key={`${string.id}-${string.value}`}
-                className={`string-list__item ${stringsSelected.find((item) => item === string.id) && "selected"}`}
-                onClick={() => handleClickItem(string)}
-                onDoubleClick={() => handleDeleteStringDoubleClick(string.id)}
-            >
-                {string.value}
-            </li>
+            return <Item string={string} />
         })}
     </ul>
 }
