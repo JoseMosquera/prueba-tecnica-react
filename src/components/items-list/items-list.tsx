@@ -9,7 +9,7 @@ export const ItemList = () => {
 
     return <ul className='string-list__content'>
         {stringList.map((string) => {
-            return <Item string={string} />
+            return <Item string={string} key={`${string.id}`} />
         })}
     </ul>
 }
