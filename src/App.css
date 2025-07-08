@@ -1,0 +1,121 @@
+body {
+  margin: 0px;
+}
+
+.app {
+  text-align: center;
+  background: transparent linear-gradient(135deg, #A1C4FD 0%, #C2E9FB 100%) 0% 0% no-repeat padding-box;
+}
+
+.app-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.string-list__container {
+  width: 500px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 12px #0000001F;
+  border-radius: 20px;
+  opacity: 1;
+  padding: 50px;
+}
+
+.string-list__title {
+  height: 49px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 44px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+
+.string-list__content {
+  background: #F7F7F7 0% 0% no-repeat padding-box;
+  padding: 11px;
+  border: 1px solid #CCCCCC;
+  opacity: 1;
+}
+
+.string-list__item {
+  margin: 0px;
+  height: 40px;
+  background: #F7F7F7 0% 0% no-repeat padding-box;
+  opacity: 1;
+  cursor: pointer;
+
+  &.selected {
+    background: #324BFF 0% 0% no-repeat padding-box;
+    color: white
+  }
+}
+
+.string-list__btnGroup {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.string-list__btnContainer1 {
+  height: 49px;
+  width: 43%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.string-list__backBtn {
+  width: 81px;
+  height: 49px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #324BFF;
+  border-radius: 50px;
+  color: #324BFF;
+  font-size: 30px;
+  border-radius: 50px;
+  opacity: 1;
+}
+
+.string-list__cancelBtn {
+  width: 124px;
+  height: 49px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #324BFF;
+  border-radius: 50px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0px;
+  color: #324BFF;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.string-list__addBtn {
+  width: 140px;
+  height: 49px;
+  background: #324BFF 0% 0% no-repeat padding-box;
+  border: 1px solid #324BFF;
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
+}
