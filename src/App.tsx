@@ -1,17 +1,14 @@
 import './App.css';
+import { ItemList } from './components/items-list/items-list';
 import Modal from './components/modal/modal';
 import { useAppContext } from './contex/AppContext';
 
 function App() {
 
   const {
-    stringList,
-    stringsSelected,
-    handleClickItem,
     handleOpenModal,
     handleBackString,
     handleDeleteString,
-    handleDeleteStringDoubleClick,
   } = useAppContext();
 
   return (
@@ -19,7 +16,8 @@ function App() {
       <div className="app-content">
         <div className='string-list__container'>
           <div className='string-list__title'>String List</div>
-          <div className='string-list__content'>
+          <ItemList />
+          {/* <div className='string-list__content'>
             {stringList.map((string) => {
               return <p
                 key={`${string.id}-${string.value}`}
@@ -30,7 +28,7 @@ function App() {
                 {string.value}
               </p>
             })}
-          </div>
+          </div> */}
           <div className='string-list__btnGroup'>
             <div className='string-list__btnContainer1'>
               <button className='string-list__backBtn' aria-label='undo last step' onClick={() => handleBackString()}>

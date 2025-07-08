@@ -43,13 +43,22 @@ body {
   background: #F7F7F7 0% 0% no-repeat padding-box;
   padding: 11px;
   border: 1px solid #CCCCCC;
+  list-style-type: none;
   opacity: 1;
 }
 
 .string-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0px;
-  height: 40px;
+  height: 30px;
   background: #F7F7F7 0% 0% no-repeat padding-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: 'Montserrat', sans-serif;
   opacity: 1;
   cursor: pointer;
 
